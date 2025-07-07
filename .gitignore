@@ -1,0 +1,10 @@
+# .gitignore
+credentials.json
+token.json
+app.py
+requeriments.txt
+
+/output
+/app
+/env
+/Casos_Laborales
