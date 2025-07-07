@@ -2,8 +2,8 @@
 credentials.json
 token.json
 app.py
-requeriments.txt
 
+/venv
 /output
 /app
 /env

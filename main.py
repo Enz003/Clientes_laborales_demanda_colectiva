@@ -27,7 +27,7 @@ class DemandaLaboralApp:
 
     def setup_page(self):
         """Configura las propiedades iniciales de la página"""
-        self.page.title = "Clientes Demanda Laboral individual"
+        self.page.title = "Clientes Demanda Laboral colectiv: ANDE"
         self.page.window_width = 650
         self.page.window_height = 750
         self.page.window_resizable = False
@@ -189,9 +189,9 @@ class DemandaLaboralApp:
                         self.status_message.value = f"✅ Cliente Encontrado: {datos_cliente['Nombres y Apellidos completos como esta en tu Cedula.'].upper()}"
                     else:
                         #self.verification_state = True
-                        self.status_message.value = f"❌ No se encontró ningún cliente con cédula {self.cedula_field.value}. Puede [registrar un cliente aquí](https://docs.google.com/forms/d/e/1FAIpQLSdij2KwIkAIpzZao4EjUJ4Xn9-CRFQcpxj9qt-SxgmO97Uvzw/viewform?usp=header)"
+                        self.status_message.value = f"❌ No se encontró ningún cliente con cédula {self.cedula_field.value}. Puede [registrar un cliente aquí](https://docs.google.com/forms/d/e/1FAIpQLSeGV6wC7fOgS13HD6yCbeAnQYsUuJC6TgOZrRzoCfrGVnTOQQ/viewform?usp=dialog)"
                 except Exception as e:
-                        self.status_message.value = f"❌ No se encontró ningún cliente con cédula {self.cedula_field.value}. Puede [registrar un cliente aquí](https://docs.google.com/forms/d/e/1FAIpQLSdij2KwIkAIpzZao4EjUJ4Xn9-CRFQcpxj9qt-SxgmO97Uvzw/viewform?usp=header)"
+                        self.status_message.value = f"❌ No se encontró ningún cliente con cédula {self.cedula_field.value}. Puede [registrar un cliente aquí](https://docs.google.com/forms/d/e/1FAIpQLSeGV6wC7fOgS13HD6yCbeAnQYsUuJC6TgOZrRzoCfrGVnTOQQ/viewform?usp=dialog)"
                 finally:
                     # Restaurar botones
                     self.verify_button.disabled = False
